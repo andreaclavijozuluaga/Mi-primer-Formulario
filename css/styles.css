@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+} /*se elimina las margenes predeterminadas de internet*/
+
+body{
+    background: url(../img/615.jpg);
+    background-size: cover; /*se acomoda la imagen del background*/ 
+    background-attachment: fixed;
+
+}
+
+.contenedor .form{
+    padding: 6%;
+    margin: auto;
+
+}/*crear una separacion del cuerpo del backgroud*/
+
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: greenyellow; /*se cambio el color de texto que esta en h1 le creamos una clase form-title*/
+    text-align: center;
+}
+
+.contenedor .form .form-header .form-title span{
+    color:white;
+    text-align: center; 
+    /*se cambio el color del cpntenido señalado en espan*/
+} /* señalo la clase del titulo*/
+
+.contenedor .form .form-header .form-paragraph{
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: 10px;
+} /*señalo la clase del parrafo*/
+
+.contenedor .form{
+    background: rgba(0,0,0,.6);/*este se utiliza para crear un banckgroun en opacidad clara o la opacidad deseada*/
+    width: 90%; /*toma el 90% de la pantalla*/
+    max-width: 500px; /*comprime el contenido en 650px*/
+    /*margin:50px 60px 50px 750px ; no me funciona resposive *//*margin auto: centra el contenedor*/
+    margin: auto;
+    padding: 20px 30px;
+    margin-top: 40px;
+    align-items: flex-start;
+    padding-bottom: 38px ; /*le agrega mas espacio al background inferiormente*/
+    border-radius: 10px; /*suaviza el backgroung con una ligera curva*/
+  
+}
+
+.contenedor .form .form-label{
+    display: block; /*para que pase uno debajo del otro*/
+    color: greenyellow;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid greenyellow; /*agrego un borde en el recuadro inferior*/
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    
+
+} /*este es para seleccionar todos los cajones del formulario input y textarea*/
+
+.contenedor .form .form-textarea {
+    text-align: left;
+    padding: 30px;
+}
+
+.contenedor .form .btn-sumit{
+    width: 100%;
+    color: white;
+    background-color: yellowgreen;
+    padding: 15px;
+    font-family: sans-serif;
+    outline: none;
+    font-size: 16px;
+    border: none; /*quitar el borde blanco en relieve*/
+    cursor: pointer; /*poner cursor manito*/
+    transition: all 0.5s ease;/*hacer transicion suave de color al hover*/
+}
+
+.contenedor .form .btn-sumit:hover{
+    background-color: tomato;
+    color: white;
+}
