@@ -14,16 +14,37 @@
                     <h1 class="form-title">C<span>ontacto</span></h1>
                     <p class="form-paragraph">Escribenos tus datos de contacto y pronto nos estaremos comúnicando contigo.<br></p>
                 </header>
-                <label for="nombre" class="form-label">Nombre Completo:</label>
+                <label for="nombre" class="form-label">Nombre Completo: <span>*</span></label>
                 <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre...">
 
-                <label for="correo-electronico" class="form-label">Correo Electrónico:</label>
+                <label class="form-label" for="Genero">Seleccione su género:
+
+
+                <label class="form-label-genero" for="Genero"> Femenino
+                     <input class="input-select" type="radio" name="genero" value="Femenino" checked="">
+                </label>
+                <label class="form-label-genero" for="Genero"> Masculino
+                     <input class="input-select" type="radio" name="genero" value="Masculino" checked="">
+                </label>
+                </label>
+
+                <label for="ciudad" class="form-label"> Ciudad desde la que se comúnica:
+                <select class="select" id="" name="ciudad" required="">
+                    <option  value="ciudad">Seleccione</option>
+                    <option  value="ciudad">Medellín</option>
+                    <option value="ciudad">Bello</option>
+                    <option value="ciudad">Itagüi</option>
+                    <option value="ciudad">Otra</option>
+                </select>
+                </label>
+
+                <label for="correo-electronico" class="form-label">Correo Electrónico: <span>*</span></label>
                 <input type="text" id="correo-electronico" class="form-input" placeholder="Escriba su Correo Electrónico...">
 
-                <label for="direccion" class="form-label">Dirección:</label>
+                <label for="direccion" class="form-label">Dirección:<span>*</span></label>
                 <input type="text" id="direccion" class="form-input" placeholder="Escriba su Dirección...">
                 
-                <label for="mensaje" class="form-label">mensaje:</label>
+                <label for="mensaje" class="form-label">Escribenos el motivo de tu consulta:</label>
                 <textarea id="mensaje" class="form-textarea" placeholder="Escriba su Mensaje... "></textarea>
 
                 <input type="submit" class="btn-sumit" value="Enviar consuta">
